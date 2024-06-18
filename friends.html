@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成为我的朋友吧</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/friends.css">
+</head>
+
+<body>
+    <header>
+        <!-- 顶部图片 -->
+        <img src="./images/顶部照片.jpg" alt="">
+        <!-- 头部Logo -->
+        <img id="headerLogo" src="./images/欢迎1.png" alt="">
+        <img id="headerSlogan" src="./images/欢迎2.png" alt="">
+        <nav>
+            <!-- 导航菜单 -->
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li class="dropdown">
+                    <!-- 下拉菜单 -->
+                    <a href="hobby.html" class="dropbtn">我的爱好</a>
+                    <div class="dropdown-content">
+                        <a href="anime.html">动漫</a>
+                    </div>
+                    <!-- 下拉菜单结束 -->
+                </li>
+                <li><a href="introduce.html">个人简历</a></li>
+                <li><a class="active" href="friends.html">结识好友</a></li>
+            </ul>
+            <!-- 导航菜单结束 -->
+        </nav>
+    </header>
+
+    <!-- 边栏区 -->
+    <aside id="sidebar">
+        <h2>To be my friends</h2>
+        <p>
+                如果你愿意成为我的朋友，那将是我极大的荣幸。
+            我珍视友谊，并相信真正的朋友是生活中最宝贵的财富。
+            我们可以一起分享快乐，共度难关，共同成长。</p>
+            <img src="./images/动图.gif" alt="">
+    </aside>
+
+
+    <!-- 表单开始，用于收集信息-->
+    <form action="my-friend-process.php" method="post">
+        <!-- 姓名输入框 -->
+        <div class="tableRow">
+
+            <p>姓名:</p>
+            <p> <input type="text" name="name" value="" placeholder="请输入您的姓名" required> </p>
+        </div>
+        <!-- 所在省份选择框 -->
+        <div class="tableRow">
+            <p>
+                您所居住的省份
+            </p>
+            <p>
+                <select name="省份">
+                    <option value="北京">北京</option>
+                    <option value="天津">天津</option>
+                    <option value="澳门">澳门</option>
+                    <option value="上海市">上海市</option>
+                    <option value="重庆市">重庆市</option>
+                    <option value="香港">香港</option>
+                    <option value="河北省">河北省</option>
+                    <option value="山西省">山西省</option>
+                    <option value="辽宁省">辽宁省</option>
+                    <option value="吉林省">吉林省</option>
+                    <option value="黑龙江省">黑龙江省</option>
+                    <option value="江苏省">江苏省</option>
+                    <option value="浙江省">浙江省</option>
+                    <option value="安徽省">安徽省</option>
+                    <option value="福建省">福建省</option>
+                    <option value="江西省">江西省</option>
+                    <option value="山东省">山东省</option>
+                    <option value="河南省">河南省</option>
+                    <option value="湖北省">湖北省</option>
+                    <option value="湖南省">湖南省</option>
+                    <option value="广东省">广东省</option>
+                    <option value="海南省">海南省</option>
+                    <option value="四川省">四川省</option>
+                    <option value="贵州省">贵州省</option>
+                    <option value="云南省">云南省</option>
+                    <option value="陕西省">陕西省</option>
+                    <option value="甘肃省">甘肃省</option>
+                    <option value="青海省">青海省</option>
+                    <option value="台湾省">台湾省</option>
+                    <option value="内蒙古">内蒙古</option>
+                    <option value="广西">广西</option>
+                    <option value="西藏">西藏</option>
+                    <option value="宁夏">宁夏</option>
+                    <option value="新疆">新疆</option>
+                </select>
+            </p>
+        </div>
+        <!-- 性别单选框 -->
+        <div class="tableRow">
+            <p> 您的性别 </p>
+            <p>
+                <input type="radio" name="gender" value="man"> 男<br>
+                <input type="radio" name="gender" value="woman" checked>
+                女
+            </p>
+        </div>
+        <!-- 年龄输入框 -->
+        <div class="tableRow">
+            <p>您的年龄:</p>
+            <p><input type="number" id="age" name="age" min="1" max="120"></p>
+        </div>
+        <div class="tableRow label">
+            <p> 您的出生日期: </p>
+            <p> <input type="date" name="date"> </p>
+        </div>
+        <!-- 电子邮件输入框 -->
+        <div class="tableRow">
+            <p> 电子邮件:</p>
+            <p> <input type="email" name="email" value="" placeholder="请输入您的电子邮件地址" required> </p>
+        </div>
+        <!-- 手机号码输入框 -->
+        <div class="tableRow">
+            <p> 手机号码:</p>
+            <p> <input type="tel" name="phone" value="" placeholder="请输入您的手机号码" pattern="[0-9]{11}" title="请输入11位手机号码"
+                    required> </p>
+        </div>
+        <!-- 留言文本域 -->
+        <div class="tableRow">
+            <p>留言:</p>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="请在此处留下您的留言"></textarea>
+        </div>
+        <!-- 表单提交按钮 -->
+        <div class="tableRow">
+            <p></p>
+            <input type="submit" value="快提交成为我的朋友吧~">
+        </div>
+    </form>
+
+    <!-- 页脚区 -->
+    <footer class="copyright">
+        <p>&copy; 2024 结交好友</p>
+    </footer>
+
+</body>
+
+</html>

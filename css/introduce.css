@@ -1,0 +1,49 @@
+body{
+    background-image: url(../images/个人简历bg.jpg);
+}
+/* 表格样式 */  
+table {  
+    width: 80%; /* 表格宽度设置为80% */  
+    border-collapse: collapse; /* 合并相邻的边框 */  
+    margin-bottom: 20px; /* 增加表格之间的间距 */  
+    border: #f2fae0;
+    margin-left: 150px;
+} 
+  
+
+/* 表格单元格样式 */  
+td {  
+    border: 1px solid #ddd; /* 设置边框 */  
+    padding: 8px; /* 设置内边距 */  
+    text-align: left; /* 文本左对齐 */  
+    width: 95px;  
+    height: 40px;
+}  
+  
+  
+  
+.table_1 {  
+    font-weight: bold; /* 字体加粗 */
+    width: 70px; 
+
+}  
+.table_2{
+    font-weight: normal;
+    width: 400px;
+    text-align: center;
+}
+
+
+  /* 居中容器的样式，在我的网页中为半透明的容器*/
+  .centered-div {
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    padding: 20px;
+    height:1200px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  p{
+    line-height: 1.5;
+    }

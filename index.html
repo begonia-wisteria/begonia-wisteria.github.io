@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header>
+        <!-- 顶部图片 -->
+        <img src="./images/顶部照片.jpg" alt="">
+        <!-- 头部Logo -->
+        <img id="headerLogo" src="./images/欢迎1.png" alt="">
+        <img id="headerSlogan" src="./images/欢迎2.png" alt="">
+        <nav>
+            <!-- 导航菜单 -->
+            <ul>
+                <li><a class="active" href="index.html">首页</a></li>
+                <li class="dropdown">
+                    <!-- 下拉菜单 -->
+                    <a href="hobby.html" class="dropbtn">我的爱好</a>
+                    <div class="dropdown-content">
+                        <a class="active" href="anime.html">动漫</a>
+                    </div>
+                    <!-- 下拉菜单结束 -->
+                </li>
+                <li><a href="introduce.html">个人简历</a></li>
+                <li><a href="friends.html">结识好友</a></li>
+            </ul>
+            <!-- 导航菜单结束 -->
+        </nav>
+    </header>
+
+    <!-- 页面主体内容区域 -->  
+    <main>
+        <div class="centered-div">
+            <!-- 基本介绍部分 --> 
+            <section>
+                <div id="container_1">
+                     <!-- 个人照片（浮动布局） --> 
+                    <div class="myphoto">
+                        <img src="./images/个人照片3.jpg" alt="">
+                    </div>
+                     <!-- 标题 -->  
+                    <h1 class="title">欢迎来到我的个人网站</h1>
+                     <!-- 基本信息表格（表格布局） -->  
+                    <div>
+                        <table id="myintroduce">  
+                            <tr class="cell">
+                              <td>姓名：</td>
+                              <td>王琴</td>
+                            </tr>
+                            <tr>
+                              <td>学校：</td>
+                              <td>中南财经政法大学</td>
+                            </tr>
+                            <tr>
+                              <td>专业：</td>
+                              <td>信息管理与信息系统</td>
+                            </tr>
+                            <tr>
+                              <td>班级：</td>
+                              <td>信管2201班</td>
+                            </tr>
+                          </table>
+                        <p class="description">
+                               欢迎来到我的个人网站！这里是我展示自我、分享生活点滴的小天地。
+                            在这里，你将看到我对世界的热爱与好奇，对知识的追求与渴望。
+                            希望你在这里能找到共鸣，也能收获一份愉悦和启发。
+                            让我们一同启程，探索这个充满无限可能的数字世界吧！
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 个人图集部分 -->
+            <section id="container_2">
+                <h2 class="gallery-title">我的个人图集</h2>
+                <!-- 照片部分 -->
+                <div class="myphoto_1">
+                    <img src="./images/个人照片1.jpg" alt="个人图集图片1">
+                    <img src="./images/个人照片2.jpg" alt="个人图集图片2">
+                    <img src="./images/个人照片4.jpg" alt="个人图集图片3">
+                    <img src="./images/个人照片5.jpg" alt="个人图集图片4">
+                    <img src="./images/个人照片6.jpg" alt="个人图集图片5">
+                </div>
+            </section>
+            <!-- 个人图集部分结束 -->
+        </div>
+    </main>
+    <!-- 主体内容部分结束 -->
+
+    <!-- 页脚区 -->
+    <footer class="copyright">
+        <p>&copy; 2024 我的个人主页</p>
+    </footer>
+</body>
+</html>

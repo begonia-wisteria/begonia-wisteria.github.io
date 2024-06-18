@@ -1,0 +1,55 @@
+form {
+	display: table;
+	padding: 10px;
+	margin-left: 30%;
+	border: thin dotted #d1e5fb;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+form textarea {
+	width: 500px;
+	height: 200px;
+}
+
+div.tableRow {
+	display: table-row;
+}
+
+div.tableRow p {
+	display: table-cell;
+	vertical-align: top;
+	padding: 20px;
+}
+
+div.tableRow p:first-child {
+	text-align: right;
+}
+
+p.heading {
+	font-weight: bold;
+}
+
+
+#sidebar {
+	border: thin solid #007e7e;
+	font-style: normal;
+	width: 200px;
+	margin-top: 5px;
+	height: 710px;
+	margin-left: 20px;
+	margin-right: 0px;
+	text-align: left;
+	background-image: url(../images/sidebar_bg.jpg);
+	background-repeat: no-repeat;
+	line-height: 2;
+	float: right;
+}
+#sidebar img {
+    /* 使用transform: scale()来缩放图片 */
+    transform: scale(0.9);
+margin-left: -30px;
+  }
+#sidebar h2{
+	color: #f45858;
+	font-style: italic;
+}
